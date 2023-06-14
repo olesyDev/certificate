@@ -1,0 +1,151 @@
+.container {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #1D191D;
+
+
+    & .wrapper {
+        background-image: url('../../assets/spheres.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 80px;
+        // background-image: url('../assets/sphereHero.png'), url('../assets/sphereSlider.png'), url('../assets/sphereForm.png');
+        // background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+        // background-size: auto, auto, auto, auto;
+        // background-position: 0 0, right 700px, left 1400px, bottom right;
+        // background-size: auto;
+
+        & .heroSection {
+            height: 665px;
+
+            & .hero {
+                height: 100%;
+                display: flex;
+                gap: 3rem;
+                background-image: url('../../assets/hero.png');
+                background-repeat: no-repeat;
+                background-size: 50%;
+                background-position: right 2rem;
+
+
+                & h2 {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 64px;
+                    line-height: 64px;
+                    color: #FFFFFF;
+                }
+
+                & h3 {
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 36px;
+                    line-height: 50px;
+                    color: #FFFFFF;
+                }
+
+                & .heroRight {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    & .heroGift {
+                        position: relative;
+                        width: 562px;
+                        height: 353px;
+                        background: rgba(77, 85, 245, 0.4);
+                        backdrop-filter: blur(10px);
+                        border-radius: 40px;
+
+
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 36px;
+                        line-height: 49px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+
+                        & .giftTitle {
+                            position: absolute;
+                            top: 26px;
+                            left: 56px;
+                        }
+
+                        & .giftFor {
+                            position: absolute;
+                            bottom: 35px;
+                            right: 56px;
+                        }
+                    }
+
+
+                    & .createCertBtn {
+                        margin-top: 20px;
+                        background: #B1EF42;
+                        border-radius: 20px;
+                        width: 562px;
+                        height: 63px;
+
+                        & a {
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 20px;
+                            line-height: 27px;
+
+                            color: #4D55F5;
+                        }
+
+                    }
+                }
+
+
+            }
+        }
+
+
+        & .sliderSection {
+
+            & .sectionTitle {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 44px;
+                text-transform: uppercase;
+                text-align: center;
+                color: #FFFFFF;
+
+                margin-bottom: 60px;
+            }
+        }
+
+
+        & .createCertForm {
+
+            & .sectionTitle {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 44px;
+                text-transform: uppercase;
+                text-align: center;
+                color: #FFFFFF;
+
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+
+    & .paymentBtn {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 33px;
+        color: #5739CB;
+        cursor: pointer;
+        width: 296px;
+        height: 63px;
+        background: #B1EF42;
+        border-radius: 10px;
+    }
+
+}

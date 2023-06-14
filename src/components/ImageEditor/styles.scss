@@ -1,0 +1,126 @@
+.editorWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  max-height: 800px;
+
+
+  & .FIE_root {
+    background-color: transparent;
+    font-family: 'Nunito Sans', sans-serif;
+
+    & .FIE_topbar {
+
+      & .FIE_topbar-save-button {
+
+        background: #B1EF42;
+        border-radius: 5px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        color: #4D55F5;
+        margin-right: 8px;
+
+        & span {
+          font-family: 'Nunito Sans', sans-serif;
+        }
+      }
+
+      & .FIE_topbar-history-buttons{
+        margin-left: 10px;
+      }
+
+      & button {
+        color: #fff;
+
+      }
+
+
+      & .FIE_topbar-center-options {
+        & label {
+          color: #fff;
+        }
+
+
+      }
+    }
+
+
+    & .FIE_main-container {
+      background-color: transparent;
+
+      & .FIE_tab {
+        background: #B1EF42;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        color: #4D55F5;
+      }
+
+      & .FIE_canvas-container {
+        background-color: transparent;
+
+        & .FIE_canvas-node {
+          background-color: transparent;
+        }
+      }
+
+
+
+    }
+
+    & .FIE_carousel-prev-button {
+      background: transparent;
+
+      & svg {
+
+        color: #fff !important;
+      }
+    }
+
+    & .FIE_carousel-next-button {
+      background: transparent;
+
+      & svg {
+
+        color: #fff !important;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+
+      .FIE_topbar {
+        justify-content: center !important;
+      }
+
+      .FIE_tools-bar {
+        justify-content: center !important;
+      }
+
+      .FIE_filters-wrapper {
+
+        width: 60% !important;
+        padding: 0 24px
+      }
+
+      .FIE_tabs {
+        display: flex;
+        justify-content: center !important;
+      }
+    }
+  }
+}
+
+.editorContainer {
+  display: flex;
+  justify-content: center;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 40px;
+}

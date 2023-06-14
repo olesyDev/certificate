@@ -1,0 +1,28 @@
+.imgSlide {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 244px;
+    overflow: hidden;
+    border-radius: 4px;
+    cursor: pointer;
+
+    & img {
+        display: block;
+        width: 360px;
+        height: 204px;
+    }
+
+    & span {
+        color: #000;
+        font-size: 24px;
+        margin-top: 4px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+
+    @media screen and (max-width: 768) {
+        width: 320px;
+    }
+}

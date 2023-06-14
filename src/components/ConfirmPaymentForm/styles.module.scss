@@ -1,0 +1,46 @@
+.container {
+
+    & .giftPrice {
+        display: flex;
+        align-items: center;
+        width: 400px;
+        height: 80px;
+        background-color: #fff;
+        border-radius: 8px;
+        margin-bottom: 24px;
+        font-weight: 500;
+        font-size: 32px;
+        padding: 0 16px;
+    }
+
+    & .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 0 16px;
+        width: 400px;
+        height: 200px;
+        background-color: #fff;
+        border-radius: 8px;
+
+        & span {
+            padding-bottom:  4px;
+            // padding-left: 8px;
+        }
+
+        & .field {
+
+            & input {
+                text-align: center;
+                border-radius: 4px;
+                height: 60px;
+                padding: 0 8px;
+                width: 180px;
+                outline: none;
+                border: none;
+                background-color: rgba(0, 0, 0, 0.06);
+            }
+        }
+    }
+}

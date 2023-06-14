@@ -1,0 +1,91 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    margin: 40px auto 120px auto;
+    padding: 0 40px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+
+
+    & .checkBoxView {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        background-color: transparent;
+        border: 1px solid #FFFFFF;
+        border-radius: 4px;
+        cursor: pointer;
+
+        & span {
+            color: #4D55F5;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+
+        & .checkBox {
+            cursor: pointer;
+            position: absolute;
+            opacity: 0;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    & .fontSelect{
+        display: flex;
+        flex-direction: column;
+        width: 180px;
+        margin-top: 16px;
+
+        & span{
+            margin-bottom: 4px;
+        }
+
+        & svg{
+            color: #fff !important;
+        }
+        
+
+        & :global(.MuiSelect-outlined){
+            color: #fff !important;
+        }
+
+        & fieldset{
+            border-color: #fff !important;
+        }
+    }
+
+
+    & .colorPickerWrapper {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-top: 16px;
+        gap: 8px;
+
+        & .colorPicker {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+
+            & input {
+                width: 24px;
+                height: 24px;
+                opacity: 0
+            }
+
+            ;
+        }
+    }
+}
+
+.checked {
+    background-color: #B1EF42 !important;
+}

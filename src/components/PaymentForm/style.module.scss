@@ -1,0 +1,91 @@
+.formWrapper {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 32px;
+
+    & .paymentInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 24px;
+
+        & h2 {
+            font-size: 1.15rem;
+            font-weight: 400;
+        }
+
+        & h3 {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+    }
+
+    & .form {
+        width: 600px;
+        height: 300px;
+        border-radius: 20px;
+        border: 1px solid #949494;
+        padding: 24px;
+
+
+        & .rowInfo {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+
+            & .cartNumber {
+                width: 356px;
+            }
+        }
+
+
+        & .rowPrivateInfo {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            margin-top: 40px;
+
+            & .labeInfo {
+                color: #949494;
+                text-align: end;
+                margin-right: 16px;
+            }
+        }
+    }
+
+    & .paymentBtn {
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+
+        & button {
+            background-color: #949494;
+            color: #fff;
+            font-weight: 600;
+        }
+    }
+}
+
+.formField {
+    color: #949494 !important;
+
+    & :global(.MuiInputBase-root) {
+        background-color: transparent !important;
+    }
+
+
+    & :global(.Mui-focused) {
+        background-color: transparent !important;
+        color: #949494 !important;
+    }
+
+    & :global(.MuiInputBase-root-MuiFilledInput-root:after) {
+        border-bottom: 2px solid #949494 !important;
+    }
+
+
+}
+
+.fixedWidth {
+    width: 152px;
+}
